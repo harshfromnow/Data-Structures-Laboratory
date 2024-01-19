@@ -59,6 +59,7 @@ node listdelete(node L,int i){
 
 void display(node L){
 	if (L==NULL){
+		printf("-1\n");
 		return;
 	}
 	node temp=L;
@@ -73,6 +74,7 @@ void display(node L){
 
 node listduplicates(node L){
 	if (L==NULL){
+		printf("-1\n");
 		return L;
 	}
 	node current=L;
@@ -95,6 +97,7 @@ node listduplicates(node L){
 node palindrome(node L){
 	int arr[100];
 	if (L==NULL){
+		printf("-1\n");
 		return L;
 	}
 	node temp=L;
@@ -115,8 +118,9 @@ node palindrome(node L){
 			printf("N\n");
 			return L;
 		}
+	}
 	printf("Y\n");
-	return L;}
+	return L;
 }
 
 int main(){
