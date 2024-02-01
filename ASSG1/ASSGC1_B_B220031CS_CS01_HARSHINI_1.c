@@ -142,39 +142,39 @@ int isLeaf(struct node *node)
 
 int leftLeafSum(struct node *root)
 {
-  int res = 0;
+  int result = 0;
   if (root != NULL)
   {
     if (isLeaf(root->left))
-      res += root->left->data;
+      result += root->left->data;
     else 
-      res += leftLeafSum(root->left);
-    res += leftLeafSum(root->right);
+      result += leftLeafSum(root->left);
+    result += leftLeafSum(root->right);
   }
-  return res;
+  return result;
 }
 
-void level(int res[], struct node* root, int d, int* size) {
-    if (!root)
+void level(int result[], struct node* root, int d, int* size) {
+    if (root==NULL)
         return;
 
     if (d >= *size) {
-        res[d] = root->data;
+        result[d] = root->data;
         *size = d + 1;
     } else {
-        res[d] = res[d] > root->data ? res[d] : root->data;
+        result[d] = result[d] > root->data ? result[d] : root->data;
     }
 
-    level(res, root->left, d + 1, size);
-    level(res, root->right, d + 1, size);
+    level(result, root->left, d + 1, size);
+    level(result, root->right, d + 1, size);
 }
 
 int* levelMax(struct node* root, int* size) {
-    int* res = NULL;
+    int* result = NULL;
     int maxSize = 0;
-    level(res, root, 0, &maxSize);
+    level(result, root, 0, &maxSize);
     *size = maxSize;
-    return res;
+    return result;
 }
 
 int main() {
@@ -193,10 +193,10 @@ int main() {
         scanf("%d", &preorder[i]);
     }
     int len = sizeof(inorder) / sizeof(inorder[0]);
-    root = buildTree(inorder, preorder, 0, len - 1);  // Remove the redeclaration
+    root = buildTree(inorder, preorder, 0, len - 1);  
 
-    int size;  // Move size declaration outside the switch statement
-    int res[size];  // Use an array instead of dynamic allocation
+    int size;  
+    int result[size];  
 
     char choice;
     do {
@@ -205,12 +205,13 @@ int main() {
         switch (choice) {
             case 'p':
                 postorder(root);
+                printf("\n");
                 break;
             case 'm':
                 size = height(root);
-                level(res, root, 0, &size);
+                level(result, root, 0, &size);
                 for (int i = 0; i < size; i++) {
-                    printf("%d ", res[i]);
+                    printf("%d ", result[i]);
                 }
                 printf("\n");
                 break;
@@ -222,7 +223,7 @@ int main() {
                 printf("%d\n", diameter(root));
                 break;
             case 's':
-                printf("%d\n", leftLeafSum(root));  // Corrected function name
+                printf("%d\n", leftLeafSum(root));  
                 break;
             case 'e':
                 break;
