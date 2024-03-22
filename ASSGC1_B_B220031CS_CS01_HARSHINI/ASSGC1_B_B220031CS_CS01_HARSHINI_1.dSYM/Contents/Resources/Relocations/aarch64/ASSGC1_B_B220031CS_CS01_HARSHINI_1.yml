@@ -1,0 +1,21 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/harshini/Documents/DSA lab/ASSGC1_B_B220031CS_CS01_HARSHINI/ASSGC1_B_B220031CS_CS01_HARSHINI_1'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _search, symObjAddr: 0x0, symBinAddr: 0x10000326C, symSize: 0x90 }
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _buildTree, symObjAddr: 0xD8, symBinAddr: 0x100003344, symSize: 0x100 }
+  - { offsetInCU: 0x58, offset: 0x58, size: 0x8, addend: 0x0, symName: _buildTree.preIndex, symObjAddr: 0x2324, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x102, offset: 0x102, size: 0x8, addend: 0x0, symName: _search, symObjAddr: 0x0, symBinAddr: 0x10000326C, symSize: 0x90 }
+  - { offsetInCU: 0x162, offset: 0x162, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x90, symBinAddr: 0x1000032FC, symSize: 0x48 }
+  - { offsetInCU: 0x198, offset: 0x198, size: 0x8, addend: 0x0, symName: _postorder, symObjAddr: 0x1D8, symBinAddr: 0x100003444, symSize: 0x70 }
+  - { offsetInCU: 0x1BC, offset: 0x1BC, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x248, symBinAddr: 0x1000034B4, symSize: 0x3C }
+  - { offsetInCU: 0x1FC, offset: 0x1FC, size: 0x8, addend: 0x0, symName: _zigzagtraversal, symObjAddr: 0x284, symBinAddr: 0x1000034F0, symSize: 0x248 }
+  - { offsetInCU: 0x27A, offset: 0x27A, size: 0x8, addend: 0x0, symName: _max, symObjAddr: 0x4CC, symBinAddr: 0x100003738, symSize: 0x48 }
+  - { offsetInCU: 0x2B0, offset: 0x2B0, size: 0x8, addend: 0x0, symName: _height, symObjAddr: 0x514, symBinAddr: 0x100003780, symSize: 0x70 }
+  - { offsetInCU: 0x2D8, offset: 0x2D8, size: 0x8, addend: 0x0, symName: _diameter, symObjAddr: 0x584, symBinAddr: 0x1000037F0, symSize: 0xB0 }
+  - { offsetInCU: 0x338, offset: 0x338, size: 0x8, addend: 0x0, symName: _isLeaf, symObjAddr: 0x634, symBinAddr: 0x1000038A0, symSize: 0x74 }
+  - { offsetInCU: 0x360, offset: 0x360, size: 0x8, addend: 0x0, symName: _leftLeafSum, symObjAddr: 0x6A8, symBinAddr: 0x100003914, symSize: 0xA8 }
+  - { offsetInCU: 0x396, offset: 0x396, size: 0x8, addend: 0x0, symName: _level, symObjAddr: 0x750, symBinAddr: 0x1000039BC, symSize: 0x11C }
+  - { offsetInCU: 0x3E4, offset: 0x3E4, size: 0x8, addend: 0x0, symName: _levelMax, symObjAddr: 0x86C, symBinAddr: 0x100003AD8, symSize: 0x4C }
+  - { offsetInCU: 0x436, offset: 0x436, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x8B8, symBinAddr: 0x100003B24, symSize: 0x3B0 }
+...
